@@ -1,15 +1,1 @@
-[
-    {
-        "numero": 1,
-        "nombre": "Juan Pérez",
-        "documento": "12345678",
-        "telefono": "1123456789"
-    },
-    {
-        "numero": 5,
-        "nombre": "María García",
-        "documento": "87654321",
-        "telefono": "1198765432"
-    }
-    // Agrega más objetos aquí cuando vendas. Formato: {"numero": X, "nombre": "Nombre Público", "documento": "DNI", "telefono": "Tel"}
-]
+[]
