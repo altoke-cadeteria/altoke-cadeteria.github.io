@@ -1,4 +1,4 @@
-let ventas = []; // Array para almacenar datos de ventas
+
 
 // Cargar datos desde ventas.json
 fetch('ventas.json')
