@@ -1,6 +1,4 @@
 [
-    {"numero": 1, "nombre": "Otro Comprador", "dni": "123", "telefono": "1234567890"},
-    // ... tus otras ventas aquí
     {
         "numero": 88,
         "nombre": "Nicolás Arguello",
