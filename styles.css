@@ -33,11 +33,13 @@ main {
     box-shadow: 0 0 10px rgba(255,0,0,0.3);
 }
 
-#listaNumeros {
+/* Estilos para las listas de números (disponibles y vendidos) - cuadrícula responsiva */
+#listaNumerosDisponibles, #listaNumerosVendidos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Cuadrícula responsive */
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Cuadrícula responsive, igual que el original */
     gap: 10px;
     justify-items: center;
+    margin-top: 10px;
 }
 
 .numero-btn {
@@ -54,12 +56,21 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: background-color 0.3s;
+}
+
+.numero-btn:hover {
+    background-color: #218838; /* Verde más oscuro al hover */
 }
 
 .numero-btn.vendido {
     background-color: #dc3545; /* Rojo para vendidos */
     cursor: not-allowed;
     font-size: 12px; /* Texto más pequeño para nombre */
+}
+
+.numero-btn.vendido:hover {
+    background-color: #c82333; /* Rojo más oscuro al hover */
 }
 
 .sorteo {
@@ -98,38 +109,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-/* Estilos para las listas de números (disponibles y vendidos) */
-#listaNumerosDisponibles, #listaNumerosVendidos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Cuadrícula responsiva: mínimo 120px por botón */
-    gap: 10px; /* Espacio entre botones */
-    justify-items: center; /* Centrar botones */
-    margin-top: 10px;
-}
-
-/* Estilos para los botones de números (igual que antes) */
-.numero-btn {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.numero-btn:hover {
-    background-color: #e0e0e0;
-}
-
-.numero-btn.vendido {
-    background-color: #d4edda; /* Verde claro para vendidos */
-    color: #155724;
-    cursor: default;
-}
-
-.numero-btn.vendido:hover {
-    background-color: #c3e6cb;
 }
