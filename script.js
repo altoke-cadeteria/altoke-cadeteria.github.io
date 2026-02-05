@@ -13,25 +13,32 @@ let ventas = [
 
 mostrarNumeros(); // Mostrar lista de números al cargar
 
-// Función para mostrar números disponibles
+// Función para mostrar números disponibles y vendidos en secciones separadas
 function mostrarNumeros() {
-    const lista = document.getElementById('listaNumeros');
-    lista.innerHTML = '';
+    const listaDisponibles = document.getElementById('listaNumerosDisponibles');
+    const listaVendidos = document.getElementById('listaNumerosVendidos');
+    listaDisponibles.innerHTML = '';
+    listaVendidos.innerHTML = '';
+    
     for (let i = 1; i <= 250; i++) {
         const vendido = ventas.find(v => v.numero === i);
         const btn = document.createElement('button');
         btn.className = vendido ? 'numero-btn vendido' : 'numero-btn';
+        
         if (vendido) {
+            // Agregar a la sección de vendidos
             btn.textContent = `Número ${i} - Vendido a ${vendido.nombre}`;
+            listaVendidos.appendChild(btn);
         } else {
+            // Agregar a la sección de disponibles
             btn.textContent = `Número ${i}`;
             btn.addEventListener('click', () => {
                 // Redirigir a WhatsApp
                 const mensaje = encodeURIComponent(`Hola, quiero comprar el número ${i} del sorteo de moto.`);
                 window.location.href = `https://wa.me/5493515160210?text=${mensaje}`;
             });
+            listaDisponibles.appendChild(btn);
         }
-        lista.appendChild(btn);
     }
 }
 
