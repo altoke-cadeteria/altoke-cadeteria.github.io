@@ -36,9 +36,9 @@ main {
 /* Estilos para las listas de números (disponibles y vendidos) - cuadrícula responsiva */
 #listaNumerosDisponibles, #listaNumerosVendidos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Cuadrícula responsive, igual que el original */
-    gap: 10px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Cuadrícula: mínimo 80px por botón, responsiva */
+    gap: 10px; /* Espacio entre botones */
+    justify-items: center; /* Centrar botones */
     margin-top: 10px;
 }
 
