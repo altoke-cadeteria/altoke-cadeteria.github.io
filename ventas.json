@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "numero": 88,
+        "nombre": "Nicolás Arguello",
+        "dni": "454",
+        "telefono": "3517656764"
+    }
+]
