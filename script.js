@@ -1,13 +1,17 @@
+// Datos de ventas hardcodeados para prueba (incluyendo Nicolás Arguello)
+// fetch('ventas.json') está comentado para usar datos locales
+let ventas = [
+    {
+        "numero": 88,
+        "nombre": "Nicolás Arguello",
+        "dni": "454",
+        "telefono": "3517656764"
+    }
+    // Agrega más participantes aquí si quieres, por ejemplo:
+    // { "numero": 1, "nombre": "Otro Comprador", "dni": "123", "telefono": "1234567890" }
+];
 
-
-// Cargar datos desde ventas.json
-fetch('ventas.json')
-    .then(response => response.json())
-    .then(data => {
-        ventas = data;
-        mostrarNumeros(); // Mostrar lista de números al cargar
-    })
-    .catch(error => console.error('Error cargando ventas:', error));
+mostrarNumeros(); // Mostrar lista de números al cargar
 
 // Función para mostrar números disponibles
 function mostrarNumeros() {
