@@ -2,7 +2,7 @@
 // fetch('ventas.json') está comentado para usar datos locales
 let ventas = [
     {
-        "numero": 48,  // Número corregido a 48
+        "numero": 48,  // Número asignado: 48
         "nombre": "Giuliano Gazzoni",
         "dni": "459",
         "telefono": "3516793402"
