@@ -1,11 +1,11 @@
-// Datos de ventas hardcodeados para prueba (incluyendo Nicolás Arguello)
+// Datos de ventas hardcodeados para prueba (ahora con el comprador real: Giuliano Gazzoni)
 // fetch('ventas.json') está comentado para usar datos locales
 let ventas = [
     {
-        "numero": 88,
-        "nombre": "Nicolás Arguello",
-        "dni": "454",
-        "telefono": "3517656764"
+        "numero": 48,  // Número corregido a 48
+        "nombre": "Giuliano Gazzoni",
+        "dni": "459",
+        "telefono": "3516793402"
     }
     // Agrega más participantes aquí si quieres, por ejemplo:
     // { "numero": 1, "nombre": "Otro Comprador", "dni": "123", "telefono": "1234567890" }
